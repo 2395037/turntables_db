@@ -24,6 +24,9 @@ TurnTables - A record store database
     - Sort by genre
     - Top sellers
     - Connection between products sold and searched for to inventory and most popular lists
+    - Be able to look up band members of albums to see if any solo work is available to sell
+    - Able to see if upcoming bands are playing a show in quebec and when
+    - 
 - Similar application : https://victrola.com
 4. Expected/possible data in the database will be:
 - Names 
