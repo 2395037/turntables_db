@@ -18,19 +18,19 @@ TurnTables - A record store database
   - The database could be used in any e-commerce applications for customers, and in-store computer applications
     - Search for products
     - Determine what is in stock
-    - Prices
-    - Customers
-    - Employees
-    - Sort by genre
-    - Top sellers
     - Connection between products sold and searched for to inventory and most popular lists
     - Be able to look up band members of albums to see if any solo work is available to sell
     - Able to see if upcoming bands are playing a show in quebec and when
-    - 
+    - Employees can see user purchase history
 - Similar application : https://victrola.com
 4. Expected/possible data in the database will be:
 - Names 
-  - Both of the employee and customer in database
+- Prices
+- Customers
+- Employees
+- Sort by genre
+- Top sellers
+- Both of the employee and customer in database
 - Employee info
   - Things like employee name, email, phone number
 - Sale history
