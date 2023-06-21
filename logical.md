@@ -1,5 +1,5 @@
 @startuml
-entity User {
+entity Users {
 *user_id: integer <<generated>> <<pk>>
 --
 *firstname: text
@@ -40,8 +40,8 @@ entity Artist {
 *artist_name: text
 }
 
-entity Band_Member {
-*band_member_id: integer <<generated>> <<pk>>
+entity Band {
+*band_id: integer <<generated>> <<pk>>
 --
 *band_name: text
 
@@ -75,19 +75,21 @@ entity Live_Show_QC {
 entity Sale {
 *sale_id: integer <<generated>> <<pk>>
 --
-date: date
-price: numeric(10,2)
+*date: date
+*price: numeric(10,2)
 *payment_method: text
 
 }
 
+Band"1" -- "*"Album: own >
+Band"*" - "*"Live_Show_QC: perform >
 User "1 " -- "*" Sale: > purchases
 Employee "1 " -- "*" Sale: > makes
-Album "1 " -- "*" Sale: > has
-Device "1 " -- "1" Sale: > has
+Album "* " -- "*" Sale: > has
+Device " * " -- " * " Sale: > has
 Merchandise "*" -- "*" Sale: > has
-Artist "*" -- "*" Album: > owns
+Artist "1" -- "*" Album: > owns
 Artist "*" -- "*" Live_Show_QC: > performs
-Artist "*" -- "1" Band_Member: > in
+Artist "*" -- "1" Band: > in
 
 @enduml
