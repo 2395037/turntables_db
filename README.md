@@ -13,4 +13,4 @@ items related to music
 - Bands contain one or many artists, who may also have solo work available for purchase, or be playing a live show in QC
 - Only marketing live shows in QC
 - The Sale table is used as a hub to connect sale information with the possible sale of either devices, merch, albums
-- In this database, albums include singles, and EP's
+- In this database, albums include singles and EP's
