@@ -83,7 +83,7 @@ entity Sale {
 
 Band"1" -- "*"Album: own >
 Band"*" - "*"Live_Show_QC: perform >
-User "1 " -- "*" Sale: > purchases
+Users "1 " -- "*" Sale: > purchases
 Employee "1 " -- "*" Sale: > makes
 Album "* " -- "*" Sale: > has
 Device " * " -- " * " Sale: > has

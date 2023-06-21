@@ -118,7 +118,7 @@ entity Artist_Show {
 Band"1" -- "*"Album: own >
 Band"1" - "*"Band_Show
 Band_Show"*" - "1"Live_Show_QC: perform >
-User "1 " -- "*" Sale: > purchases
+Users "1 " -- "*" Sale: > purchases
 Employee "1 " -- "*" Sale: > makes
 Album " 1 " -- "*"Album_Sale
 Album_Sale"*" -- "1" Sale: > has
