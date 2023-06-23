@@ -84,3 +84,9 @@ insert into device (device, price, in_stock, condition) values ('Audio Technica 
 insert into device (device, price, in_stock, condition) values ('Bethoveen Inspired Limited Edition Turntable', 1312.61, true, 'used');
 insert into device (device, price, in_stock, condition) values ('1800s Turntable', 2311.21, true, 'used');
 
+insert into live_show_qc (show_date, location) VALUES ('2024-07-22', 'Old city');
+
+insert into artist_show (artist_id, show_id) VALUES ('2', '1');
+insert into artist_show (artist_id, show_id) VALUES ('15', '1');
+
+insert into band_show (band_id, show_id) VALUES ('1', '1');
