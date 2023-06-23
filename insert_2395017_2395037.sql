@@ -48,6 +48,9 @@ values ('Justin', 'Robinson', 'robinson@example.com', '5144494242','2021-06-01',
 insert into employee (firstname, lastname, email, phone, hired_on, birthdate)
 values ('Emily', 'Clark', 'clark@example.com', '5149321199','2018-12-26', '1992-11-21');
 
+insert into band (band_name) values('Mes Aïeux');
+insert into band (band_name) values('The Beatles');
+
 insert into artist (artist_name) values ('Celine Dion');
 insert into artist (artist_name) values ('Eric Lapointe');
 insert into artist (artist_name) values ('Isabelle Boulay');
@@ -61,12 +64,17 @@ insert into artist (artist_name) values ('Frédéric Giroux');
 insert into artist (artist_name) values ('Marc-André Paquet ');
 insert into artist (artist_name) values ('Benoît Archambault');
 insert into artist (artist_name) values ('Luc Lemire');
+insert into artist (artist_name, band_id) VALUES ('George Harrison', 2);
+insert into artist (artist_name, band_id) VALUES ('John Lennon', 2);
+insert into artist (artist_name, band_id) VALUES ('Paul McCartney', 2);
+insert into artist (artist_name, band_id) VALUES ('Ringo Starr', 2);
 --
--- insert into album (album_name, genre, format, price, in_stock, condition, artist_id) values ('Bienvenue sur Terre', 'R&B', 'CD', 16.76, true, 'new', 2);
--- insert into album (album_name, genre, format, price, in_stock, condition, artist_id) values ('Heart Go On', 'Romantic', 'Cassette', 19.56, true, 'new', 1);
--- insert into album (album_name, genre, format, price, in_stock, condition, artist_id) values ('The Stars', 'Rock', 'Disk', 22.99, true, 'used', 3);
-
-insert into band (band_name) values('Mes Aïeux');
+insert into album (album_name, genre, format, price, in_stock, condition, artist_id, band_id) values ('A new day has come', 'R&B', 'CD', 16.76, true, 'new', 1, null);
+insert into album (album_name, genre, format, price, in_stock, condition, artist_id, band_id) values ('Heart Go On', 'Romantic', 'Cassette', 19.56, true, 'new', 2, null);
+insert into album (album_name, genre, format, price, in_stock, condition, artist_id, band_id) values ('The Stars', 'Rock', 'Disk', 22.99, true, 'used', 3, null);
+insert into album (album_name, genre, format, price, in_stock, condition, artist_id, band_id) VALUES ('White Album', 'pop', 'vinyl', 35.99, true, 'used', null, 2);
+insert into album (album_name, genre, format, price, in_stock, condition, artist_id, band_id) VALUES ('All things must pass', 'pop', 'vinyl', 30.99, true, 'used', 13, 2);
+insert into album (album_name, genre, format, price, in_stock, condition, artist_id, band_id) VALUES ('Imagine', 'pop', 'vinyl', 33.99, true, 'used', 14, 2);
 
 insert into device (device, price, in_stock, condition) values ('Sony USB Turntable with Bluetooth Connectivity', 312.21, true, 'new');
 insert into device (device, price, in_stock, condition) values ('Denon DP-300F Fully Automatic Turntable with Built-in Phono Equalizer', 639.99, true, 'new');
